@@ -12,7 +12,7 @@ const canSend = computed(() => input.value.trim() && !isRunning.value)
 
 const demoScript = [
   {
-    user: '帮我查一下杭州明天天气，并推荐一件适合出行的外套。',
+    user: '帮我2查一下杭州明天天气，并推荐一件适合出行的外套。',
     steps: [
       { type: 'thinking', text: '分析用户意图：需要天气查询 + 穿搭建议' },
       { type: 'tool', name: 'get_weather', args: '{ "city": "杭州", "date": "明天" }' },
